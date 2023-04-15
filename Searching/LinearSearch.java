@@ -32,6 +32,8 @@ import java.util.Arrays;
             while (n > 0){
                 n = (n - n%10)/10; 
                 // can also be simply written as n/10
+                // Also this could be added separately as method
+                // also simply  digits(n) function could be used
                 digits ++;
             }
 
