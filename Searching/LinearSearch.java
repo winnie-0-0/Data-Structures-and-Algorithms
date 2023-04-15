@@ -50,6 +50,10 @@ import java.util.Arrays;
                 digits ++;
             }
 
+            /*  
+            Optimisation :
+            Another way of finding digits : digits = (int)(Math.log10(n) + 1) 
+            */
             if(digits%2 == 0){
                 count++;
             }
