@@ -27,9 +27,22 @@ import java.util.Arrays;
     static int findNumbers(int[] nums) {
         int count = 0;
         for(int ele : nums){
+            //If number is a negative number
+            if(ele < 0){
+                ele = ele*-1;
+            }
+            
             int n = ele;
             int digits = 0;
+
+            //For 0
+            if(ele == 0){
+                digits = 1; 
+             }
+
+            // For Positive numbers
             while (n > 0){
+
                 n = (n - n%10)/10; 
                 // can also be simply written as n/10
                 // Also this could be added separately as method
