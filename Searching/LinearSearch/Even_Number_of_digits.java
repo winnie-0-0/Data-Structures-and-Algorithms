@@ -13,6 +13,9 @@ Explanation:
 Therefore only 12 and 7896 contain an even number of digits.
 
  */
+
+package LinearSearch;
+
 import java.util.Arrays;
 
  class Solution {
