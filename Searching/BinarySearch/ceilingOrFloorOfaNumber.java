@@ -5,10 +5,11 @@ public class ceilingOrFloorOfaNumber {
 
         int[] arr = {-2, 3, 45, 67, 88 ,999, 8000, 54637};
 
-        int ans = ceilOrFloor(arr, 450, 1);
-        int ans1 = ceilOrFloor(arr, 450, 0);
-        System.out.println("\nCeiling of input number : " + Integer.toString(arr[ans]));
-        System.out.println("\nFloor of input number : " + Integer.toString(arr[ans1]));
+        int ans = ceilOrFloor(arr, 800000, 1);
+        int ans1 = ceilOrFloor(arr, -45, 0);
+
+        System.out.println("\nCeiling of input number : " + Integer.toString(ans));
+        System.out.println("\nFloor of input number : " + Integer.toString(ans1));
 
     }
 
@@ -34,9 +35,18 @@ public class ceilingOrFloorOfaNumber {
         }
 
         if(cF == 1){
-            return start;
+// If target is greater than the last number in array (greatest no.) hence no ceiling exists.
+            if(target > arr[arr.length - 1]){
+                return -1;
+            }
+            return arr[start];
         }else{
-            return end;
+// If target is smaller than the first number in array (smallest no.) hence no floor exists.
+
+            if(target < arr[0]){
+                return -1;
+            }
+            return arr[end];
         }
         
 
