@@ -1,5 +1,5 @@
 package BinarySearch;
-
+/*Find ceiling or floor of a number from the input array ! */
 public class ceilingOrFloorOfaNumber {
     public static void main(String[] args){
 
