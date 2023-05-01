@@ -1,3 +1,12 @@
+/* LEETCODE : 852 - https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
+ * 162 - https://leetcode.com/problems/find-peak-element/description/
+ * 
+ * The following code solves both finding Peak index in Mountain array 
+ * and Peak index in zigzag aaray !!
+ * Leetcode easy and medium.
+   */
+
+
 package BinarySearch;
 
 public class peak_index_in_a_mountainArray {
