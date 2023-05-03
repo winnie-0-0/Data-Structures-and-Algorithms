@@ -2,8 +2,8 @@ package BinarySearch;
 
 public class rotated_binary_search {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,5,6};
-        System.out.println((Search(arr, 4)));
+        int[] arr = {3,5,1};
+        System.out.println((Search(arr, 3)));
         
     }
 
@@ -37,7 +37,7 @@ public class rotated_binary_search {
     static int Search(int[] arr , int target){
 
         int pivot = findPivot(arr);
-
+        // System.out.println(pivot);
         if (pivot == -1 ){
 
             return BinarySearch(arr , target, 0 , arr.length - 1);
@@ -46,9 +46,9 @@ public class rotated_binary_search {
 
             return pivot;
              
-        }else if(arr[0] < target){
+        }else if(arr[0] <= target){
 
-            return BinarySearch(arr, target, 0 , pivot - 1);           
+            return BinarySearch(arr, target, 0 , pivot-1);           
             
         }else{
                 return BinarySearch(arr, target, pivot+1 , arr.length -1);
